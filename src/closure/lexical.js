@@ -17,3 +17,24 @@ function myFunction() {
 }
 
 myFunction();
+
+
+const myAño = 2018;
+
+function myFecha(){
+    const myMes = 12;
+    console.log(myAño);
+
+    function miDia() {
+        const myDia = 9;
+        console.log(myMes, myAño)
+
+        function diaEterno(){
+            console.log(myDia, myMes, myAño);
+        }
+        return diaEterno();
+    }
+    return miDia();
+}
+
+myFecha();
